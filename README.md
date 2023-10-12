@@ -18,6 +18,6 @@ Simple python code to decrypt pdf files using pypdf.PdfReader
 
    ```console
    git clone git clone git@github.com:jakelime/pdfdecrypt.git
-   # Download your "encrypted.pdf" file
+   # Download your "encrypted.pdf" file to root
    python cli.py
    ```
