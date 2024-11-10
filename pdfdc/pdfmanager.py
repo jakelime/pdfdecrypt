@@ -55,7 +55,7 @@ class PdfManager:
             try:
                 reader.decrypt(self.get_password())
             except Exception as e:
-                self.log.error(f"decrypt function failed, {e=}")
+                raise RuntimeError(f"decrypt function failed, {e=}")
 
         for page in reader.pages:
             writer.add_page(page)  # Add all pages to the writer
